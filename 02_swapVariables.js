@@ -1,0 +1,18 @@
+var name1 = "Sweety";
+var name2 = "Cutie";
+var temp;
+console.log("Values before swapping: \n name1=", name1, " & name2=", name2);
+temp = name1;
+name1 = name2;
+name2 = temp;
+console.log("Values after swapping: \n name1=", name1, " & name2=", name2);
+var num1 = 100;
+var num2 = 200;
+var num3 = 300;
+var temp;
+console.log("Values before swapping: \n num1=", num1, ",num2=", num2, " & num3=", num3);
+temp = num1;
+num1 = num2;
+num2 = num3;
+num3 = temp;
+console.log("Values after swapping: \n num1=", num1, ",num2=", num2, " & num3=", num3);
