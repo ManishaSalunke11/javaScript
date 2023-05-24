@@ -1,0 +1,18 @@
+const arrayFruits = ["Banana", "Orange", "Apple", "Mango", "Water Melon"];
+console.log(`First Element is: ${arrayFruits[0]}`);
+var lastElement = arrayFruits[arrayFruits.length - 1];
+console.log(`First Element is: ${lastElement}`);
+arrayFruits.splice(3, 1);
+console.log(`After removing Mango array is:${arrayFruits}`);
+arrayFruits.push("Pineapple");
+console.log(`After inserting Pineapple at last array is:${arrayFruits}`);
+arrayFruits.splice(3, 0, "Dragon Fruit");
+console.log(`After adding Dragon Fruit before Water Melon array is:${arrayFruits} `);
+arrayFruits.splice(1, 1, "Kiwi");
+console.log(`After replacing Orange with Kiwi array is:${arrayFruits}`);
+const selectedElements = arrayFruits.slice(1, 5);
+console.log(`Elements from 1 to 4 are:${selectedElements}`);
+var lastElement = arrayFruits[arrayFruits.length - 1];
+var secondLastElement = arrayFruits[arrayFruits.length - 2];
+var thirdLastElement = arrayFruits[arrayFruits.length - 3];
+console.log(`Last three elements of array: ${lastElement},${secondLastElement},${thirdLastElement}`);
