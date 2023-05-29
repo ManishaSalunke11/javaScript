@@ -40,3 +40,15 @@ let person = {
  
  console.log(person);
   console.table(person);
+
+  console.log(`============ Creating an empty object==================`);
+ let student = {
+
+ }
+ console.log(student);
+ student.marks="99%";
+ console.log(student);
+
+ const isCityAvailable = "city" in student;
+ console.log(`Is City available in student object: ${isCityAvailable}`);
+ console.log(`Is marks available in student object: ${"marks" in student}`);
