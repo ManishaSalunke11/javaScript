@@ -15,6 +15,12 @@ const poonam = new Student("Poonam", 20, "Female", "Mumbai" );
 const rushi = new Student("Rushikesh", 23, "Male", "Indor");
 const snehal = new Student("Snehal", 22, "Male", "Pune");
 
+const array = [abhijeet, poonam, rushi, snehal];
+
+for (const element of array) {
+    element.showDetails();
+}
+
 abhijeet.showDetails(); 
 snehal.showDetails();
 rushi.showDetails();
