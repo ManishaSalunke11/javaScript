@@ -1,0 +1,51 @@
+let arrayNums = [20, 3, 4, 56, 90, 400, 49];
+let clonedArrayNums = arrayNums;
+clonedArrayNums.push(55);
+clonedArrayNums.push(66);
+console.log("--------Shallow clone result---------");
+console.log(`arrayNums is:${arrayNums}`);
+console.log(`clonedArrayNums is:${clonedArrayNums}`);
+
+console.log("--------Deep clone result---------");
+clonedArrayNums = [...arrayNums];
+arrayNums.push(10);
+arrayNums.push(25);
+console.log(`arrayNums is:${arrayNums}`);
+console.log(`clonedArrayNums is:${clonedArrayNums}`);
+
+let arrayEven = [2, 30, 14, 8];
+let newArray = arrayNums.concat(arrayEven);
+console.log("----------result after new array concated----------");
+console.log(newArray);
+
+const employee_info = {
+    emp_id: 27,
+    emp_name: "John Doe",
+    salary: {
+        july_month: "40,000INR",
+        aug_month: "50,000INR",
+        jun_month: "65,000INR"
+    },
+    address: {
+        locality: {
+            colony: "Om Vrindawan society",
+            street: "Kanch Pokali,431202",
+        },
+        city: "Mumbai",
+        state: "Maharashtra",
+        country: "India"
+    },
+    mobiles: ["+91 8600 3456 88", "1800- 4567 32", "+91- 9096 5678 77"]
+}
+
+console.log("-----------Address is------------");
+console.log(employee_info.address.locality);
+console.log(employee_info.address.city, employee_info.address.state, employee_info.address.country);
+console.log("Mobile is:");
+console.log(employee_info.mobiles);
+
+const deepCloneEmp_info = JSON.parse(JSON.stringify(employee_info));
+deepCloneEmp_info.july_month = "80,000INR";
+employee_info.country = "United Kingdom";
+console.log(`updated value of country of origional object is:${employee_info.country}`);
+console.log(`updated value of cloned object is:${deepCloneEmp_info.july_month}`);
