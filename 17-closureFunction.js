@@ -11,3 +11,4 @@ function outerFun(){
 }
 let inner = outerFun();
 inner();
+// outerFun()();
