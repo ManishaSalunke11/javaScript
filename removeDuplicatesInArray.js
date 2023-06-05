@@ -18,3 +18,13 @@ const str = "How are you mate";
 console.log("Given string is:");
 console.log(str);
 console.log("Expected output is:");
+const newStr = str.split(" ");
+
+for (var i = 0; i < newStr.length; i++) {
+    newStr[i] = newStr[i].charAt(0).toUpperCase() + newStr[i].slice(1);
+
+}
+
+const str2 = newStr.join(" ");
+
+console.log(str2);
