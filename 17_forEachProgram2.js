@@ -23,3 +23,12 @@ array_employees.forEach( (employee)=> {
         console.log(employee);
     }
 });
+
+// WAP to get the sum of all salary of Infy employees
+let sumSalaryOfInfy = 0;
+array_employees.forEach( (employee)=> {
+    if (employee.emp_company == "Infy") {
+        sumSalaryOfInfy = sumSalaryOfInfy + employee.emp_salary;
+    }
+});
+console.log(sumSalaryOfInfy);
