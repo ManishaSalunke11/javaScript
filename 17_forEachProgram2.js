@@ -32,3 +32,11 @@ array_employees.forEach( (employee)=> {
     }
 });
 console.log(sumSalaryOfInfy);
+
+// WAP to find the average salary of an employee 
+let sumSalary = 0;
+array_employees.forEach( (employee) => {
+    sumSalary = sumSalary + employee.emp_salary;
+});
+let averageSalary = sumSalary / array_employees.length;
+console.log(`Average Salary is : ${averageSalary}`);
