@@ -7,3 +7,5 @@ function sayHello(company) {
 }
 
 sayHello.call(person, "Apple" )
+console.log("apply()");
+sayHello.apply(person, ["Apple" , "CEO"] );
