@@ -9,3 +9,7 @@ function sayHello(company) {
 sayHello.call(person, "Apple" )
 console.log("apply()");
 sayHello.apply(person, ["Apple" , "CEO"] );
+console.log("bind()");
+let funRef = sayHello.bind(person);
+
+funRef("Apple" , "CEO" );
