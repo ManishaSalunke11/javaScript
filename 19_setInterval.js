@@ -1,3 +1,3 @@
-setInterval(()=>{
+setInterval(() => {
     console.log(`show function`);
 }, 3000);
